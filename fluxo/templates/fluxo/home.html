@@ -1,0 +1,165 @@
+{% extends "fluxo/base.html" %}
+
+{% block title %}
+    Estúdio Fluxo — Home
+{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="eyebrow">ESTÚDIO CRIATIVO</p>
+
+        <h1>
+            Criamos marcas que
+            <span>geram movimento.</span>
+        </h1>
+
+        <p>
+            Estratégia, design e tecnologia para construir marcas
+            relevantes, desejadas e preparadas para o futuro.
+        </p>
+
+        <a href="{% url 'portfolio' %}">
+            Conheça nosso trabalho
+        </a>
+    </div>
+</section>
+
+<section id="sobre" class="section">
+    <div class="section-header">
+        <p class="eyebrow">SOBRE O ESTÚDIO</p>
+
+        <h2>
+            Design com propósito.
+            <span>Resultado com impacto.</span>
+        </h2>
+    </div>
+
+    <div class="about-content">
+        <p>
+            Somos um estúdio independente que acredita no poder do design
+            para transformar negócios e conectar pessoas.
+        </p>
+
+        <p>
+            Trabalhamos lado a lado com nossos clientes para criar soluções
+            que combinam estratégia, criatividade e tecnologia.
+        </p>
+    </div>
+</section>
+
+<section class="section services">
+    <div class="section-header">
+        <p class="eyebrow">O QUE FAZEMOS</p>
+
+        <h2>
+            Soluções para cada
+            <span>momento da sua marca.</span>
+        </h2>
+    </div>
+
+    <div class="services-grid">
+        <article class="service-card">
+            <span>01</span>
+
+            <h3>Branding</h3>
+
+            <p>
+                Estratégia de marca, posicionamento, identidade visual
+                e sistemas de identidade.
+            </p>
+        </article>
+
+        <article class="service-card">
+            <span>02</span>
+
+            <h3>Digital</h3>
+
+            <p>
+                Websites, produtos digitais e experiências pensadas
+                para conectar marcas e pessoas.
+            </p>
+        </article>
+
+        <article class="service-card">
+            <span>03</span>
+
+            <h3>Campanhas</h3>
+
+            <p>
+                Conceito criativo, direção de arte e campanhas
+                que geram conversa e movimento.
+            </p>
+        </article>
+    </div>
+</section>
+
+<section class="section work">
+    <div class="section-header">
+        <p class="eyebrow">TRABALHOS SELECIONADOS</p>
+
+        <h2>
+            Alguns projetos que
+            <span>nos movem.</span>
+        </h2>
+    </div>
+
+    <div class="work-grid">
+
+        <article class="work-card">
+            <div class="work-image">
+                <span>Projeto 01</span>
+            </div>
+
+            <div class="work-info">
+                <h3>Identidade Visual</h3>
+                <p>Branding</p>
+            </div>
+        </article>
+
+        <article class="work-card">
+            <div class="work-image">
+                <span>Projeto 02</span>
+            </div>
+
+            <div class="work-info">
+                <h3>Experiência Digital</h3>
+                <p>Digital</p>
+            </div>
+        </article>
+
+        <article class="work-card">
+            <div class="work-image">
+                <span>Projeto 03</span>
+            </div>
+
+            <div class="work-info">
+                <h3>Campanha</h3>
+                <p>Campanhas</p>
+            </div>
+        </article>
+
+    </div>
+
+    <a href="{% url 'portfolio' %}" class="button">
+        Ver todos os projetos
+    </a>
+</section>
+
+<section id="contato" class="cta">
+    <div>
+        <p class="eyebrow">VAMOS CONVERSAR?</p>
+
+        <h2>
+            Tem um projeto
+            <span>em mente?</span>
+        </h2>
+
+        <a href="mailto:ola@estudiofluxo.com">
+            Entre em contato
+        </a>
+    </div>
+</section>
+
+{% endblock %}
